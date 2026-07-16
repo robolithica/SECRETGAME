@@ -2,8 +2,6 @@ class Player {
 
     update(){
 
-    update(){
-
     if(consumeKey("ArrowUp")){
         this.y -= 16;
     }
@@ -22,7 +20,6 @@ class Player {
 
 }
 
-}
     constructor(){
 
         this.x = 150;
