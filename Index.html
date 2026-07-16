@@ -4,40 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Project Name</title>
+<title>Retro RPG</title>
 
 <link rel="stylesheet" href="style.css">
-
-<!-- Pixel art stays crisp -->
-<style>
-canvas {
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
-}
-</style>
-
 </head>
+
 <body>
 
-<div id="game">
+<canvas id="gameCanvas"></canvas>
 
-    <!-- Main game screen -->
-    <canvas id="screen" width="320" height="288"></canvas>
-
-    <!-- Dialogue Box -->
-    <div id="dialogue" class="hidden">
-        <div id="dialogueText"></div>
-    </div>
-
-    <!-- Menu -->
-    <div id="menu" class="hidden"></div>
-
-    <!-- Fade Screen -->
-    <div id="fade"></div>
-
-</div>
-
-<script type="module" src="js/main.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
