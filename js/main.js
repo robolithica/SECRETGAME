@@ -23,7 +23,7 @@ function gameLoop(){
         50,
         40
     );
-
+    player.update();
     player.draw(ctx);
 
     requestAnimationFrame(gameLoop);
