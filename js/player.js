@@ -1,5 +1,24 @@
 class Player {
 
+    update(){
+
+    if(keys["ArrowUp"]){
+        this.y -= 16;
+    }
+
+    if(keys["ArrowDown"]){
+        this.y += 16;
+    }
+
+    if(keys["ArrowLeft"]){
+        this.x -= 16;
+    }
+
+    if(keys["ArrowRight"]){
+        this.x += 16;
+    }
+
+}
     constructor(){
 
         this.x = 150;
