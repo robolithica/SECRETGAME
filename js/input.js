@@ -1,21 +1,9 @@
-const keysPressed = {};
+const keys = {};
 
 window.addEventListener("keydown", function(event){
-
-    keysPressed[event.key] = true;
-
+    keys[event.key] = true;
 });
 
-
-function consumeKey(key){
-
-    if(keysPressed[key]){
-
-        keysPressed[key] = false;
-        return true;
-
-    }
-
-    return false;
-
-}
+window.addEventListener("keyup", function(event){
+    keys[event.key] = false;
+});
