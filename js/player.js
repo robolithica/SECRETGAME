@@ -2,21 +2,25 @@ class Player {
 
     update(){
 
-    if(consumeKey["ArrowUp"]){
+    update(){
+
+    if(consumeKey("ArrowUp")){
         this.y -= 16;
     }
 
-    if(consumeKey["ArrowDown"]){
+    if(consumeKey("ArrowDown")){
         this.y += 16;
     }
 
-    if(consumeKey["ArrowLeft"]){
+    if(consumeKey("ArrowLeft")){
         this.x -= 16;
     }
 
-    if(consumeKey["ArrowRight"]){
+    if(consumeKey("ArrowRight")){
         this.x += 16;
     }
+
+}
 
 }
     constructor(){
